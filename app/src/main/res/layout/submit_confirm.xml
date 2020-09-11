@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background">
+
+    <ImageView
+        android:id="@+id/cancel_dialog_imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cancel_dialog"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/cancel_dialog_imageview" />
+
+    <TextView
+        android:id="@+id/are_you_sure"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/confirm_submit"
+        android:foregroundGravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorGrey"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancel_dialog_imageView" />
+
+    <Button
+        android:id="@+id/confirm_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_edge_yes_button"
+        android:textColor="@color/colorYesButton"
+        android:textAllCaps="false"
+        android:text="@string/yes"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/are_you_sure"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

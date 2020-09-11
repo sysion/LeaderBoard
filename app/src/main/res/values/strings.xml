@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GADS Leaderboard</string>
+    <string name="splash_background">splash_background</string>
+    <string name="row_imageview">row_imageView</string>
+    <string name="leaderboard">LEADERBOARD</string>
+    <string name="submit">Submit</string>
+    <string name="back_arrow_imageview">back_arrow_imageView</string>
+    <string name="gads_logo_imageview">gads_logo_imageView</string>
+    <string name="yes">Yes</string>
+    <string name="cancel_dialog_imageview">cancel_dialog_imageview</string>
+    <string name="confirm_submit">Are You Sure ?</string>
+    <string name="submit_pass">Submission Successsful</string>
+    <string name="submit_pass_imageview">submit_pass_imageview</string>
+    <string name="submit_fail_imageview">submit_fail_imageview</string>
+    <string name="submit_fail">Submission not Successful</string>
+    <string name="email_address">Email Address</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="project_github_link">Project on GITHUB (link)</string>
+    <string name="submit_project_textview">Project Submission</string>
+    <string name="learning_leaders">Learning Leaders</string>
+    <string name="skill_iq_leaders">Skill IQ Leaders</string>
+</resources>

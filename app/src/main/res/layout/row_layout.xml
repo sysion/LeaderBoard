@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--FrameLayout can only have ONE direct child-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="@color/colorWhite">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="0dp"
+        android:background="@color/colorWhite">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:id="@+id/row_imageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/row_imageview" />
+
+            <!-- match_constraint (0dp) is used for row_textView to fill the remaining
+                 width and height -->
+            <TextView
+                android:id="@+id/row_name_textView"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/row_imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/row_hour_score_textView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/row_imageView"
+                app:layout_constraintTop_toBottomOf="@+id/row_name_textView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
